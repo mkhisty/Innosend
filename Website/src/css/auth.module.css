@@ -1,0 +1,53 @@
+.carddiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+.card {
+    height: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.darkcard {
+    background-color: #1c1b22;
+    color: white;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.cardtitle {
+    text-align: center;
+}
+
+.cardbutton {
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.cardbutton p {
+    margin-left: 4px;
+    margin-right: 4px; 
+}
+
+.anchor {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 435px) {
+    .cardbutton p {
+        display: none;
+    }
+
+    .cardbutton {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}

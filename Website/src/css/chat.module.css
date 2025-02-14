@@ -1,0 +1,116 @@
+.maingrid {
+    margin-top: 5em;
+}
+
+.chatdiv {
+    margin-right: 6em;
+    height: 86vh;
+    overflow-y: auto;
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.frienddiv {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(30%);
+    transition: box-shadow 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.frienddiv:hover, .chatdiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.chattitlediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.chattitlearrow {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+}
+
+.chattitle {
+    font-size: x-large;
+    text-align: center;
+}
+
+.chatcontent {
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.sendarea {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.sendarea textarea {
+    width: 45vw;
+    margin-right: 20px;
+    overflow-wrap: break-word;
+    height: min-content;
+}
+
+.sendarea button {
+    margin-top: 1.5em;
+}
+
+.sentbubble {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #228be6;
+    width: fit-content;
+    color: white;
+    border-radius: 30px 50px 15px;
+    margin-left: auto;
+    transform: translateX(-20px);
+}
+
+.recievedbubble {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #29cce3;
+    width: fit-content;
+    color: white;
+    border-radius: 15px 50px 30px;
+    transform: translateX(20px);
+}
+
+.sentbubble p, .recievedbubble p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.friendavatar {
+    outline-offset: 1px;
+    outline: 3px solid #abfafb;
+    margin-bottom: 20px;
+}
+
+.friendname {
+    font-size: x-large;
+}
+
+.ac {
+    margin-top: 20px;
+    font-size: large;
+    text-align: center;
+}
+
+.code {
+    font-size: medium;
+}

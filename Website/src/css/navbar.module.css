@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+}
+
+.navimage {
+    margin-top: 35px;
+    margin-left: 20px;
+}
+
+.navimage:hover {
+    cursor: pointer;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.login {
+    color: white;
+    margin-right: 30px;
+    margin-left: 60px;
+}
+
+.navlinks a {
+    position: relative;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.navlinks a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#26e7e3, #3275e3);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+}
+
+.navlinks a:hover::before {
+    background-size: 100% 2px;
+}
+
+.burger {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 5px;
+    margin-right: 30px;
+}
+
+.mobilenavopen {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.mobilenavopen a {
+    font-size: x-large;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.mobilenavopen a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#26e7e3, #3275e3);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.3s;
+}
+
+.mobilenavopen a:hover::before {
+    background-size: 100% 2px;
+}
+
+
+.mobilenavclose {
+    display: none;
+}
+
+.avatar {
+    margin-right: 50px;
+    margin-left: 60px;
+    transition: transform 0.3s ease-in-out;
+    outline-offset: 1px;
+    outline: 2px solid #abfafb;
+    transform: scale(1.2);
+}
+
+.avatar:hover {
+    cursor: pointer;
+}
+
+.darktext a {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .navlinks {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 525px) {
+    .burger {
+        display: none;
+    }
+
+    .imagediv {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+    }
+
+    .navimage {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .mobilenavopen {
+        display: none;
+    }
+}

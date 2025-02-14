@@ -1,0 +1,36 @@
+{
+  "name": "innosend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.3.2",
+    "@mantine/hooks": "^7.3.2",
+<<<<<<< HEAD
+=======
+    "bufferutil": "^4.0.8",
+>>>>>>> 6b212b14a9f2269b23ae69e9dbdc6c52aa7b673b
+    "mongoose": "^8.0.3",
+    "nanoid": "^5.0.4",
+    "next": "14.0.4",
+    "next-auth": "^4.24.5",
+    "react": "^18",
+    "react-dom": "^18",
+<<<<<<< HEAD
+    "react-icons": "^4.12.0"
+=======
+    "react-icons": "^4.12.0",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+>>>>>>> 6b212b14a9f2269b23ae69e9dbdc6c52aa7b673b
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
+}

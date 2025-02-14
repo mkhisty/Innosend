@@ -1,0 +1,65 @@
+.herodiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+}
+
+.herosvg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.herodiv h1 {
+    margin-right: 6px;
+    margin-left: 6px;
+    font-size: 2em;
+}
+
+.textdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.gradienttext {
+    font-size: 2.5em;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.colortoggle {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    padding: 9px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media only screen and (max-width: 525px) {
+    .herosvg {
+        width: 90vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .herodiv h1 {
+        font-size: 5.8vw;
+    }
+
+    .textdiv {
+        margin-top: -20px;
+        margin-bottom: -20px;
+    }
+
+    .gradienttext {
+        font-size: 5.8vw;
+    }
+}
